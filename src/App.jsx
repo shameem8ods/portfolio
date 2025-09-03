@@ -1,6 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, FileDown, ExternalLink } from "lucide-react";
+import avatar from "./image/avatar.jpg";
+import amazon from "./image/amazon.png";
+import robpunks from "./image/robpunks.png";
+import multi from "./image/multi.png";
 
 const PROFILE = {
   name: "Muhammed Shameem P",
@@ -11,7 +15,7 @@ const PROFILE = {
   linkedin: "https://www.linkedin.com/in/mushameem",
   github: "https://github.com/mushameem",
   resume: "/shameem.docx",
-  avatar: "/avatar.jpg"
+  avatar: avatar
 };
 
 const SKILLS = [
@@ -33,7 +37,7 @@ const PROJECTS = [
     title: "RobPunks NFT Mint",
     desc: "A full NFT mint website to and mint robPunksNFTs on the goerli testnet.",
     stack: ["React.js", "Tailwind", "Blockchain", "Framer Motion"],
-    image: "/robpunks.png",
+    image: robpunks,
     github: "https://github.com/shameem8ods/web3-RobPunksFullMintNFt",
     live: "https://web3-rob-punks-full-mint-nft.vercel.app/"
   },
@@ -42,7 +46,7 @@ const PROJECTS = [
     title: "Amazon Clone",
     desc: "A responsive front-end clone of Amazon focused on product listing and cart interactions",
     stack: ["React.js", "Firebase", "Emotion"],
-    image: "/amazon.png",
+    image: amazon,
     github: "https://github.com/shameem8ods/Amazon_clone",
     live: "https://amazon-clone-nine-roan.vercel.app"
   },
@@ -51,7 +55,7 @@ const PROJECTS = [
     title: "Multi Wallet Connect",
     desc: "A Decentralized multi wallet connect that supports metamask, coinbase, wallet connect, Formatic, Portis and Torus",
     stack: ["Next.js", "Chakra UI", "Web3.0"],
-    image: "/multi.png",
+    image: multi,
     github: "https://github.com/shameem8ods/Web3-multiWalletConnect",
     live: "web3-token-farm-ntmg.vercel.app"
   }
