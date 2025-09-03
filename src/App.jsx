@@ -69,10 +69,10 @@ const cardHover = {
 export default function App() {
   return (
     <div className="min-h-screen bg-neutral-950 text-neutral-100 antialiased">
-      <div className="max-w-[1400px] mx-auto px-6 py-12 grid grid-cols-12 gap-8">
-        <aside className="col-span-12 lg:col-span-4 sticky top-6 self-start">
+      <div className="max-w-[1400px] mx-auto px-6 py-12 lg:grid lg:grid-cols-12 lg:gap-8">
+        <aside className="lg:col-span-4 lg:sticky top-6 self-start">
           <div className="backdrop-blur-sm bg-neutral-900/90 border border-neutral-800 rounded-2xl p-6 shadow-2xl">
-            <div className="flex items-center gap-4">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
               <img
                 src={PROFILE.avatar}
                 alt="avatar"
@@ -148,7 +148,7 @@ export default function App() {
           </div>
         </aside>
 
-        <main className="col-span-12 lg:col-span-8">
+        <main className="lg:col-span-8 mt-12 lg:mt-0">
           <section className="mb-8">
             <h2 className="text-xl font-semibold text-neutral-100">
               Selected Work
@@ -167,7 +167,7 @@ export default function App() {
                 {PROJECTS.map((p, idx) => (
                   <article
                     key={p.id}
-                    className="snap-start shrink-0 w-[320px] sm:w-[380px] md:w-[440px]"
+                    className="snap-start shrink-0 w-[300px] sm:w-[360px] md:w-[420px]"
                   >
                     <motion.div
                       initial="rest"
@@ -252,7 +252,7 @@ export default function App() {
             <form
               action="https://formspree.io/f/mrbaynvy"
               method="POST"
-              className="mt-6 grid grid-cols-1 gap-4"
+              className="mt-6 grid grid-cols-1 gap-4 max-w-xl"
             >
               <div>
                 <label htmlFor="name" className="sr-only">
